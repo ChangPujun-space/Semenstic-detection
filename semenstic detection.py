@@ -18,8 +18,8 @@ import numpy as np
 # In[41]:
 
 
-textdata = pd.read_csv("D://Users//pjchang//Downloads/自助_HBU_NPS-586453099.csv",index_col = False)
-textdata = textdata[textdata["是否服产范围"] == "T"]
+textdata = pd.read_csv("D://Users//pjchang//Downloads/XXX.csv",index_col = False)
+textdata = textdata[textdata["是否XX范围"] == "T"]
 testdata = textdata["commentcontent"]
 
 
@@ -40,5 +40,5 @@ for i in testdata:
 
 textdata["情感分析"] = semenstic_scorelist
 print(textdata)
-textdata.to_csv("D:/Users/pjchang/Desktop/testing_space/semensticdetection/with_情感分析2.csv",encoding="utf_8_sig")
+textdata.to_csv("D:/Users/pjchang/Desktop/情感分析2.csv",encoding="utf_8_sig")
 
